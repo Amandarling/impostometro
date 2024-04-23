@@ -1,0 +1,18 @@
+{
+    "extends": "airbnb-base",
+    "env": {
+        "browser": true
+    },
+    "rules": {
+        "no-console": 0,
+        "no-unused-vars": 0,
+        "no-undef":"off",
+        "no-param-reassign": 0,
+        "func-names":"off",
+        "prefer-arrow-callback": "off",
+        "indent": ["error", 4],
+        "import/extensions": 0,
+        "import/no-unresolved": 0,
+        "import/no-webpack-loader-syntax": 0
+    }
+}

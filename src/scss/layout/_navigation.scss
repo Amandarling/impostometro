@@ -1,0 +1,10 @@
+.logo {
+    display: block;
+    max-width: em(200);
+    margin: 0 auto;
+
+    @include media('>=tablet') {
+        margin: auto;
+        max-width: em(160);
+    }
+}

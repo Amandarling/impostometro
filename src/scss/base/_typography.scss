@@ -1,0 +1,75 @@
+body {
+    color: $color-body;
+    @include interpolate(font-size, em(320), em(992), em(14), em(16));
+    @include interpolate(line-height, em(320), em(992), em(22), em(24));
+    letter-spacing: em(-0.6);
+    font-family: $font-primary;
+    font-weight: $font-regular;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    color: $primary-color;
+    font-family: $font-primary;
+}
+
+p {
+    margin: 0;
+}
+
++.uk-h1,
+*+.uk-h2,
+*+.uk-h3,
+*+.uk-h4,
+*+.uk-h5,
+*+.uk-h6,
+*+h1,
+*+h2,
+*+h3,
+*+h4,
+*+h5,
+*+h6 {
+    margin: 0 0 0 0;
+    font-family: "Exo 2", sans-serif !important;
+}
+
+.wt-section-page {
+    padding: 30px 0;
+}
+
+.wt-page-title {
+    margin-bottom: em(4);
+    @include interpolate(font-size, em(320), em(992), em(22), em(26));
+    @include interpolate(line-height, em(320), em(992), em(22, 22), em(26, 26));
+}
+
+.wt-page-subtitle {
+    @include interpolate(font-size, em(320), em(992), em(18), em(16));
+    @include interpolate(line-height, em(320), em(992), em(18, 18), em(16, 16));
+}
+
+.wt-section-title {
+    margin-bottom: em(4);
+    @include interpolate(font-size, em(320), em(992), em(24), em(32));
+    @include interpolate(line-height, em(320), em(992), em(24, 24), em(32, 32));
+    font-weight: 700;
+}
+
+.wt-section-title-small {
+    margin-top: em(8);
+    @include interpolate(font-size, em(320), em(992), em(20), em(28));
+    @include interpolate(line-height, em(320), em(992), em(20, 20), em(28, 28));
+}
+
+.wt-title-footer {
+    margin-top: em(16);
+    margin-bottom: em(8);
+    @include interpolate(font-size, em(320), em(992), em(14), em(16));
+    @include interpolate(line-height, em(320), em(992), em(14, 14), em(16, 16));
+    font-weight: 700;
+}
