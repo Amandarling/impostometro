@@ -15,6 +15,7 @@ $headers = [
 ];
 
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 // Execute
 $result=curl_exec($ch);
 // Closing
